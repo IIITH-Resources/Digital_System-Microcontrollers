@@ -105,28 +105,84 @@
                     </object>
                 </div>
             </section>
+            <section class="post">
+                <header class="major">
+                    <span class="date">Previous Year Papers</span>
+                    <!--h1>DSM<br />
+                        Quizzes & Exams Page</h1-->
+                </header>
+
+                <div class="row">
+                    <div class="col-6 col-12-small">
+                        <ul class="actions stacked">
+                            <li><a href="#GPDFViewer" class="button primary fit"
+                                    onclick="Drivepdffn('github.com/VijayrajS/iiitprevpapers/raw/master/Year1/CS/DSM-Digital%20Systems%20%26%20Microcontrollers/DSM_end_2010.pdf','nbviewer.org/github/VijayrajS/iiitprevpapers/blob/master/Year1/CS/DSM-Digital%20Systems%20%26%20Microcontrollers/DSM_end_2010.pdf')">End
+                                    Sems 2010</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-12-small">
+                        <ul class="actions stacked">
+                            <li><a href="#GPDFViewer" class="button primary fit"
+                                    onclick="Drivepdffn('github.com/VijayrajS/iiitprevpapers/raw/master/Year1/CS/DSM-Digital%20Systems%20%26%20Microcontrollers/DSM_end_2013.pdf','nbviewer.org/github/VijayrajS/iiitprevpapers/blob/master/Year1/CS/DSM-Digital%20Systems%20%26%20Microcontrollers/DSM_end_2013.pdf')">End
+                                    Sems 2013</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-12-small">
+                        <ul class="actions stacked">
+                            <li><a href="#GPDFViewer" class="button primary fit"
+                                    onclick="Drivepdffn('github.com/VijayrajS/iiitprevpapers/raw/master/Year1/CS/DSM-Digital%20Systems%20%26%20Microcontrollers/DSM_mid2_2016.pdf','nbviewer.org/github/VijayrajS/iiitprevpapers/blob/master/Year1/CS/DSM-Digital%20Systems%20%26%20Microcontrollers/DSM_mid2_2016.pdf')">Mid
+                                    Sems 2 2016</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-12-small">
+                        <ul class="actions stacked">
+                            <li><a href="#GPDFViewer" class="button primary fit"
+                                    onclick="Drivepdffn('github.com/VijayrajS/iiitprevpapers/raw/master/Year1/CS/DSM-Digital%20Systems%20%26%20Microcontrollers/DSM_end_2019.pdf','nbviewer.org/github/VijayrajS/iiitprevpapers/blob/master/Year1/CS/DSM-Digital%20Systems%20%26%20Microcontrollers/DSM_end_2019.pdf')">End
+                                    Sems 2019</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p>From VijayrajS/iiitprevpapers repo (Link in More Resources Section in <a href="../index.html">Site
+                        Home</a>)</p>
+
+                <div id="GPDFViewer" style="display: none;">
+                    <hr style="border-top: 3px dashed red;">
+                    <p> If you are unable to view this file properly, Please
+                        <a href="./" rel="follow" target="_blank" download id="GPDFViewerDownload">Click here</a> to
+                        open
+                        it externally.
+                    </p>
+                    <iframe
+                        src="https://nbviewer.org/github/VijayrajS/iiitrevpapers/blob/master/Year1/CS/DISC-Discrete%20Structures/DISC_end_2016.pdf"
+                        width='100%' height='800' id="GPDFViewerIFrame">
+                    </iframe>
+                </div>
+            </section>
 
         </div>
-    </div>
-    <!-- Footer -->
-    <footer id="footer">
-        <section>
-            <h4>Digital Systems & Microcontrollers</h4>
-        </section>
-        <section class="split contact">
-            <section class="alt">
-                <h3>Professor</h3>
-                <p>Aftab M. Hussain ; Harikumar K (Labs)</p>
-            </section>
+
+        <!-- Footer -->
+        <footer id="footer">
             <section>
-                <h3>Timeline</h3>
-                <p>Semester - 1</p>
+                <h4>Digital Systems & Microcontrollers</h4>
             </section>
-            <section>
-                <h3>Year of Content</h3>
-                <p>2021 - 2022</p>
-            </section>
-            <!--<section>
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Professor</h3>
+                    <p>Aftab M. Hussain ; Harikumar K (Labs)</p>
+                </section>
+                <section>
+                    <h3>Timeline</h3>
+                    <p>Semester - 1</p>
+                </section>
+                <section>
+                    <h3>Year of Content</h3>
+                    <p>2021 - 2022</p>
+                </section>
+                <!--<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
 									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
@@ -135,8 +191,9 @@
 									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>-->
-        </section>
-    </footer>
+            </section>
+        </footer>
+    </div>
 
     <!-- Copyright -->
     <!--<div id="copyright">
@@ -152,7 +209,7 @@
 	               Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
                  ->
             </ul>
-        </div>-->
+    </div>-->
     <include src="./footer.html"></include>
 
     <!-- Scripts -->
@@ -176,6 +233,25 @@
             document.getElementById("PDFViewerDownload").href = name1;
             if (document.getElementById("PDFViewer").style.display === "none") {
                 document.getElementById("PDFViewer").style.display = "block";
+            }
+        }
+    </script>
+    <script>
+        function Drivepdffn(name1, name2) {
+            //var x = document.getElementById("PDFViewerObject");
+            var y = document.getElementById('GPDFViewerIFrame');
+            //x.data = name1;
+            var https = "https://";
+            name1 = https + name1;
+            name2 = https + name2;
+            //name1 = https.concat(name1);
+            //name2 = https.concat(name2);
+            //y.contentWindow.history.replaceState('WhatEverNameYouWant', "", name2);
+            y.src = name2;
+            //document.getElementById("GPDFViewerIFrame").src = name2;
+            document.getElementById("GPDFViewerDownload").href = name1;
+            if (document.getElementById("GPDFViewer").style.display === "none") {
+                document.getElementById("GPDFViewer").style.display = "block";
             }
         }
     </script>
